@@ -4,37 +4,6 @@
     }
 }
 
-.title-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-        gap: 16px;
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: $desctop) {
-        margin-bottom: 26px;
-    }
-}
-
-.about__title {
-    @include font (700, 24px, calc(29/24));
-    color: $primary-color;
-
-
-    @media screen and (min-width: $tablet) {
-        font-size: 44px;
-        line-height: calc(54/44);
-    }
-}
-
-.about__line {
-    @extend %line;
-}
-
 .about__info {
     display: flex;
     flex-wrap: wrap;
