@@ -38,11 +38,13 @@ button {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $basic-white;
+    
 }
 
 .container {
     margin: 0 auto;
 	padding: 0 16px;
+    overflow: hidden;
     
 
     @media screen and (min-width: $mobile) {

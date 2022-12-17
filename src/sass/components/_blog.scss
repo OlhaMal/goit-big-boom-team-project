@@ -1,6 +1,13 @@
 .blog {
 
-    padding: 100px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width:768px){
+        padding:100px 0;
+    }
+
+
+
 
     &__title-wrapper{
         display: flex;
@@ -39,7 +46,7 @@
 
     &__slider-list {
         list-style: none;
-        
+        // width:413px;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -1,6 +1,6 @@
 .backdrop {
     position: fixed;
-    z-index: 10;
+    z-index: 1;
     overflow-y: scroll;
     top: 0;
     left: 0;
@@ -15,25 +15,39 @@
     }
 
     &.is-hidden .modal__subscribe {
-        transform: translate(-50%, -50%);
+        // transform: translate(-50%, 50%);
+    }
+}
+
+
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
     }
 
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
-.error{
-    border-color: red;
-}
+
 
 .modal {
 
     &__subscribe {
 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);        
+        position: absolute;        
+        top: 0;
+        left: 0;
+        bottom:0;
+        right:0;
+        margin:auto;
+                   
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
 
@@ -44,12 +58,12 @@
         display: flex;
         flex-direction: column;
 
-        @media screen and (min-width: 320px) and (max-width: 767px) {
+        @media screen and (min-width: 320px) and (max-width: 767.95px) {
             width: 272px;
             height: 380px;
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
+        @media screen and (min-width: 768px) and (max-width: 1279.99px) {
             width: 588px;
             height: 644px;
         }
@@ -75,7 +89,7 @@
         background-size: cover;
         background-color:$basic-white;
 
-        @media screen  and (max-width: 767px) {
+        @media screen  and (max-width: 767.95px) {
             width: 272px;
             height: 121px;
               background-image: 
@@ -88,7 +102,7 @@
               }
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
+        @media screen and (min-width: 768px) and (max-width: 1279.95px) {
             width: 588px;
             height: 271px;
               background-image: 
@@ -120,23 +134,18 @@
     &__data {
         display:flex;
         flex-direction: column;
+        justify-content: center;
         padding: 18px 16px 28px;
 
-        @media screen and (max-width: 767px) {
-            width: 272px;
-            height: 259px;
-        }
-
+        
         @media screen and (min-width: 768px) and (max-width: 1279px) {
-            width: 588px;
-            height: 373px;
+            
             padding: 28px 118px 40px;
         }
 
         @media screen and (min-width: 1280px) {
-            width: 430px;
-            height: 528px;
-            padding: 112px 40px;
+            width:428px;
+            padding: 112px 38px;
         }
     }
 
@@ -144,11 +153,11 @@
         margin-bottom: 14px;
         text-align: center;
         color: $primary-color;
-        @include font(600, 19px, calc(19/24), 0);
+        @include font(600, 19px, calc(24/19), 0);
 
         @media screen and (min-width:768px) {
             margin-bottom: 24px;
-            @include font(600, 28px, calc(28/34), 0);
+            @include font(600, 28px, calc(34/28), 0);
         }
     }
 
@@ -160,7 +169,7 @@
 
         @media screen and (min-width:768px) {
             margin-bottom: 32px;
-            @include font(400, 16px, calc(16/20), 0);
+            @include font(400, 16px, calc(16/20), normal);
         }
     }
 
@@ -184,13 +193,13 @@
         @media screen and (min-width:768px) {
 
             font-size: 14px;
-        }
-
-        // &:focus-within{
-        //     color:$brand-color-focus;
-        // }
+        }      
 
     }
+
+    &__input.error {
+            border: 2px solid red;
+        }
 
     &__input {
         margin-top: 8px;        
