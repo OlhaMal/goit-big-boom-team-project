@@ -1,0 +1,131 @@
+.blog {
+    &__title {
+        margin: 0;
+
+        position: relative;
+        display: block;
+
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: calc(29 / 24);
+    }
+
+    &__title:after {
+        position: absolute;
+        top: 50%;
+
+        margin-left: 16px;
+        content: '';
+        width: 95%;
+        height: 0.5px;
+        background-color: #000000;
+        border: 0.5px solid #000000;
+    }
+
+    &__slider-list {
+        list-style: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 28px;
+
+        @media screen and (min-width: 480px) {
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 44px;
+        }
+    }
+
+    &__follow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+
+        @media screen and (min-width: 768px) {
+            gap: 40px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            gap: 48px;
+        }
+    }
+
+    &__paragraf {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: calc(22 / 18);
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: calc(39 / 32);
+        }
+    }
+
+    &__btn-subscribe {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: calc(22 / 18);
+        background-color: #e86f54;
+        color: #ffffff;
+        text-align: center;
+        border: transparent;
+        padding: 8px 40px;
+        border-radius: 38px;
+
+        @media screen and (min-width: 768px) {
+            padding: 20px 70px;
+            font-size: 28px;
+            line-height: 0.86;
+        }
+
+        &:hover {
+            background-color: #e25b41;
+        }
+
+        &:focus {
+            background-color: #fa6f54;
+        }
+    }
+
+    &__slider {
+        position: relative;
+    }
+
+    &__slider-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    &__slider-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+
+    &__icon {
+        fill: #000000;
+        stroke: #000000;
+        width: 41px;
+        height: 27px;
+
+        @media screen and (min-width: 768px) {
+            width: 98px;
+            height: 64px;
+            fill: #000000;
+            stroke: #000000;
+        }
+    }
+}
