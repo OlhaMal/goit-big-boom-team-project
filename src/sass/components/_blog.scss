@@ -29,7 +29,7 @@
         position: relative;
         display: block;
         text-transform: uppercase;
-        @include font(700, 24px, calc(29 / 24), 0); 
+        @include font(700, 24px, calc(29 / 24)); 
         
         @media screen and (min-width:768px){
             font-size: 44px;
@@ -82,7 +82,7 @@
 
     &__paragraf {
         
-        @include font(500,18px,calc(22/18),0);
+        @include font(500,18px,calc(22/18));
         text-align: center;
 
         @media screen and (min-width: 768px) {
@@ -92,7 +92,7 @@
 
     &__btn-subscribe {
         font-family: inherit;
-        @include font(500, 18px, calc(22/18), 0);
+        @include font(500, 18px, calc(22/18));
         
         background-color: #e86f54;
         color: #ffffff;

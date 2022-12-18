@@ -85,17 +85,12 @@
         @media screen  and (max-width: 767.95px) {
             width: 272px;
             height: 121px;
-              background-image: 
-                url(/src/images/blog/modal_mob/modal-mob.jpg);
-
-              @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                background-image: url(/src/images/blog/modal_mob/modal-mob-2x.jpg);
-              }
+            background-image:image-set(url(../images/blog/modal_mob/modal-mob.jpg) 1x,url(../images/blog/modal_mob/modal-mob-2x.jpg) 2x) ;
+             
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1279.95px) {
+
+        @media screen and (min-width: 768px) and (max-width: 1279.95px){
             width: 588px;
             height: 271px;
               background-image: 
@@ -146,11 +141,11 @@
         margin-bottom: 14px;
         text-align: center;
         color: $primary-color;
-        @include font(600, 19px, calc(24/19), 0);
+        @include font(600, 19px, calc(24/19));
 
         @media screen and (min-width:768px) {
             margin-bottom: 24px;
-            @include font(600, 28px, calc(34/28), 0);
+            @include font(600, 28px, calc(34/28));
         }
     }
 
@@ -158,11 +153,11 @@
         margin-bottom: 18px;
         text-align: center;
         color:$faint-gray-color;
-        @include font(400, 12px, calc(12/15), 0);
+        @include font(400, 12px, calc(12/15));
 
         @media screen and (min-width:768px) {
             margin-bottom: 32px;
-            @include font(400, 16px, calc(16/20), normal);
+            @include font(400, 16px, calc(16/20));
         }
     }
 
@@ -181,7 +176,7 @@
         width: 100%;        
         color: $faint-gray-color;
         cursor: pointer;
-        @include font(500, 10px, calc(10/13), 0.03em);
+        @include font(500, 10px, calc(10/13));
 
         @media screen and (min-width:768px) {
 
@@ -208,11 +203,11 @@
         }
 
         &::placeholder {
-            @include font(500,12px,calc(12/14),0.03em);
+            @include font(500,12px,calc(12/14));
             color: rgba(0, 0, 0, 0.4);
 
             @media screen and (min-width:768px) {
-                    @include font(500, 14px, calc(14/17), 0.03em);
+                    @include font(500, 14px, calc(14/17));
                 }
 
         }
