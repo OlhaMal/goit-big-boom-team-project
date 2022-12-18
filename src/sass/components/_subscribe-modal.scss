@@ -11,28 +11,17 @@
 
     &.is-hidden {
         opacity: 0;
-        pointer-events: none;
+        pointer-events: none;        
     }
 
     &.is-hidden .modal__subscribe {
-        // transform: translate(-50%, 50%);
+        
+        opacity:0.5;
+        transform: translateX(-100%) scale(0);
+        transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);        
     }
 }
-
-
-
-
-@keyframes slideInLeft {
-    0% {
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
 
 
 .modal {
@@ -49,16 +38,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        flex-direction: column;
 
         max-width: 100%;
         border: transparent;
         background-color: white;
 
-        display: flex;
-        flex-direction: column;
+        transform: translateX(0%) scale(1);
+        opacity:1;        
+        transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        
 
-        @media screen and (min-width: 320px) and (max-width: 767.95px) {
+        @media screen and (max-width: 767.95px) {
             width: 272px;
             height: 380px;
         }
