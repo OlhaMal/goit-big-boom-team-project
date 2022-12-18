@@ -1,0 +1,89 @@
+.hero__wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 354px;
+
+    @media screen and (min-width: $tablet) {
+      height: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 793px;
+    } 
+}
+
+.hero__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-right: 14px;
+  color: $primary-color;
+
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-right: 110px;
+  }
+}
+
+.hero__button{
+  border: none;
+  background-color: transparent;
+}
+
+.hero__svg {
+    
+    width: 64px;
+    height: 74px;
+    margin-left: 8px;
+
+    @media screen and (min-width: $tablet) {
+      width: 145px;
+      height: 150px;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 166px;
+      height: 166px;
+      margin-left: 110px;
+    }
+}
+
+.hero__title {
+  position: absolute;
+  top: 291px;
+  left: 50%;
+  transform: translateX(-50%); 
+  margin: 0;
+
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    top: 622px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    top: 598px;
+  }
+}
