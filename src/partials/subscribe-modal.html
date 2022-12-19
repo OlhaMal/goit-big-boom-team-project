@@ -1,0 +1,37 @@
+<div class="backdrop is-hidden">
+  <div class="modal__subscribe">
+    <button class="modal__btn-close">
+      <svg class="modal__btn-icon">
+        <use href="/src/images/icons.svg#icon-modal-cross"></use>
+      </svg>
+    </button>
+
+    <div class="modal__bcg">
+      <h2 class="modal__title-hidden">Flowers background</h2>
+    </div>
+
+    <div class="modal__data">
+      <p class="modal__title">
+        Follow to our newsletter
+      </p>
+      <p class="modal__text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in  your&nbsp;box.
+      </p>
+      <form class="modal__form">        
+        <label class="modal__label">
+          Email<br />
+          <input
+            class="modal__input"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+            required
+          />
+        </label>
+        <button type="submit" class="modal__btn-subscribe">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
