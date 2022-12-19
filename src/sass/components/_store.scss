@@ -1,0 +1,95 @@
+
+.store__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+   
+    @media screen and(min-width : $tablet){
+        gap: 32px;
+    }
+}
+.store__item {
+    width: calc((100% - 16px) / 2);
+
+    @media screen and(min-width : $tablet){
+        width: calc((100% - 32px) / 2);
+    }
+}
+.store__img {
+    margin-bottom: 12px;
+
+    @media screen and(min-width : $tablet) {
+        margin-bottom: 16px;
+    }
+}
+
+.store__subtitle{
+    @include font (500, 16px, 1.25);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+
+    @media screen and (min-width : $tablet){
+        font-size: 32px;
+        line-height: 1.2;
+   
+        &::after{
+            content: "";
+            height: 1px;
+            background-color: $primary-color;
+            flex-grow: 1;       
+            }
+    }
+    @media screen and (min-width : $desktop){  
+        font-size: 36px;
+        gap: 16px;
+    }
+}
+
+
+.store__text{
+    @include font (600, 12px, 1.25);
+    color: $primary-color;
+    opacity: 0.6;
+
+
+    @media screen and (min-width : $tablet){
+        font-size: 24px;
+        line-height: 1.2;
+    
+    }
+
+    @media screen and (min-width : $desktop){
+        font-size: 28px;
+    
+    }
+}
+
+.store__btn{
+    border-radius: 38px;
+    @include font (500, 20px, 1.2);
+    display: block;
+
+
+    color: $basic-white;
+    padding: 10px 35px;
+    margin: 0 auto;
+        &:hover{
+            background-color: $brand-color-hover;
+        }
+        &:focus{
+        background-color: $brand-color-focus;
+        }
+
+    @media screen and (min-width : $tablet){
+        font-size: 28px;
+        line-height: 0.85;
+        padding: 20px 43.5px;
+    
+    
+    }
+
+}
