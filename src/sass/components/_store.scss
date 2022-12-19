@@ -72,11 +72,10 @@
     border-radius: 38px;
     @include font (500, 20px, 1.2);
     display: block;
-
-
     color: $basic-white;
     padding: 10px 35px;
     margin: 0 auto;
+    background-color:$brand-color;
         &:hover{
             background-color: $brand-color-hover;
         }
