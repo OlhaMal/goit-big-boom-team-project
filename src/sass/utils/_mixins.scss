@@ -1,11 +1,11 @@
-@mixin font ($fw, $fs, $lh) {
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
 }
 
-@mixin transition ($prop) {
-    transition-property: $prop;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@mixin transition($prop) {
+  transition-property: $prop;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
