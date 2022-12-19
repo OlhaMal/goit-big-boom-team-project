@@ -1,5 +1,6 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
+  const mobileLinks = document.querySelector(".mobile-menu__list");
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
@@ -17,6 +18,7 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  mobileLinks.addEventListener("click", toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
