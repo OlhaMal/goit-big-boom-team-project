@@ -17,12 +17,11 @@
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: -32px;
 
     @media screen and (min-width: $tablet) {
-        gap: 0;
         flex-wrap: nowrap;
-        justify-content: space-between;
     }
 }
 
@@ -36,6 +35,13 @@
 
 .footer__icon {
     fill: $basic-white;
+}
+
+.footer-nav, .working, .address, .social {
+    @media screen and (max-width: $tablet) {
+        flex-basis: calc((100% - 64px) / 2);
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -65,14 +71,6 @@
     }
 }
 
-.working {
-    margin-left: auto;
-
-    @media screen and (min-width: $tablet) {
-        margin-left: 0;
-    }
-}
-
 .working__text {
     @extend %footer-text;
 
@@ -89,8 +87,7 @@
 }
 
 .contacts__link {
-    @include font (500, 13.7px, calc(17/14));
-    color: $basic-white;
+    @extend %footer-text;
     font-style: normal;
     overflow-wrap: break-word;
 
@@ -100,11 +97,9 @@
     }
 }
 
-.contacts__item--break {
-    width: 115px;
-
+.br {
     @media screen and (min-width: $tablet) {
-        width: auto;
+        display: none;
     }
 }
 
