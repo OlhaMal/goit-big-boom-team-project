@@ -63,14 +63,6 @@
     }
 }
 
-.working {
-    margin-left: auto;
-
-    @media screen and (min-width: $tablet) {
-        margin-left: 0;
-    }
-}
-
 .working__text {
     @extend %footer-text;
 
