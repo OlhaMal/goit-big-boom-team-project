@@ -1,45 +1,20 @@
 
-// .store__title{
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 1.2;
-//     position: relative;
-//     text-transform: uppercase;
-//     display: flex;
-//     align-items: center;
-//     gap: 15px;
-//     margin-bottom: 32px;
-  
-
-//     @media screen and (min-width : 768px){
-//         font-weight: 700;
-//         font-size: 44px;
-//         ine-height: 1.2;
-//         margin-bottom: 60px;  
-//     }
-
-
-//     @media screen and (min-width : 1280px){
-//      margin-bottom: 80px;  
-//     }
-// }
-// .store__title::after{
-//     content: "";
-//     width: 100%;
-//     height: 1px;
-//     display: block;
-//     background-color: black;
-// }
-
 .store__list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 32px;
    
+    @media screen and(min-width : $tablet){
+        gap: 32px;
+    }
 }
 .store__item {
     width: calc((100% - 16px) / 2);
+
+    @media screen and(min-width : $tablet){
+        width: calc((100% - 32px) / 2);
+    }
 }
 .store__img {
     margin-bottom: 12px;
@@ -50,45 +25,38 @@
 }
 
 .store__subtitle{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font (500, 16px, 1.25);
     margin-bottom: 6px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
 
 
     @media screen and (min-width : $tablet){
-        font-weight: 500;
         font-size: 32px;
         line-height: 1.2;
    
         &::after{
             content: "";
             height: 1px;
-            display: block;
             background-color: $primary-color;
             flex-grow: 1;       
             }
     }
     @media screen and (min-width : $desktop){  
         font-size: 36px;
-        line-height: 1.2;
+        gap: 16px;
     }
 }
 
 
 .store__text{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
+    @include font (600, 12px, 1.25);
     color: $primary-color;
     opacity: 0.6;
 
 
     @media screen and (min-width : $tablet){
-        font-weight: 600;
         font-size: 24px;
         line-height: 1.2;
     
@@ -96,20 +64,15 @@
 
     @media screen and (min-width : $desktop){
         font-size: 28px;
-        line-height: 1.2;
     
     }
 }
 
 .store__btn{
-    background-color: $brand-color;
-    border: 0;
     border-radius: 38px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    @include font (500, 20px, 1.2);
     display: block;
-    cursor: pointer;
+
 
     color: $basic-white;
     padding: 10px 35px;
@@ -122,18 +85,11 @@
         }
 
     @media screen and (min-width : $tablet){
-        font-weight: 500;
         font-size: 28px;
         line-height: 0.85;
         padding: 20px 43.5px;
     
     
     }
-    @media screen and (min-width : $desktop){
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 0.85;
-        padding: 20px 43.5px;
- 
-    }
+
 }
