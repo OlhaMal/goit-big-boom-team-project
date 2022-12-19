@@ -17,12 +17,10 @@
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    justify-content: space-between;
 
     @media screen and (min-width: $tablet) {
-        gap: 0;
         flex-wrap: nowrap;
-        justify-content: space-between;
     }
 }
 
@@ -89,8 +87,7 @@
 }
 
 .contacts__link {
-    @include font (500, 13.7px, calc(17/14));
-    color: $basic-white;
+    @extend %footer-text;
     font-style: normal;
     overflow-wrap: break-word;
 
@@ -100,11 +97,9 @@
     }
 }
 
-.contacts__item--break {
-    width: 115px;
-
+.br {
     @media screen and (min-width: $tablet) {
-        width: auto;
+        display: none;
     }
 }
 
