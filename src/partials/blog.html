@@ -1,130 +1,156 @@
 <section class="blog">
-  <div class="blog__container container">
-    <div class="blog__title-wrapper">
-      <h2 class="animate__animated animate__slideInLeft blog__title">blog</h2>
-      <span class="animate__animated animate__slideInRight blog__line"></span>
-    </div>
-    
-    <div class="blog__slider">
-      <ul class="blog__slider-list">
-        <li class="blog__slider-item">
-          <picture class="blog__flower">
-            <source
-              media="screen and (max-width:767px)"
-              srcset="
-                /src/images/blog/mobile/flowers2-mob.jpg    1x,
-                /src/images/blog/mobile/flowers2-mob@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:768px) and (max-width:1279px)"
-              srcset="
-                /src/images/blog/tablet/flowers2-tablet.jpg    1x,
-                /src/images/blog/tablet/flowers2-tablet@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:1280px)"
-              srcset="
-                /src/images/blog/desktop/flowers2-desk.jpg    1x,
-                /src/images/blog/desktop/flowers2-desk@2x.jpg 2x
-              "
-            />
-            <img
-              srcset="
-                /src/images/blog/desktop/flowers2-desk.jpg    1x,
-                /src/images/blog/desktop/flowers2-desk@2x.jpg 2x
-              "
-              src="/src/images/blog/desktop/flowers2-desk@2x.jpg"
-              alt="image"
-              loading="lazy"
-            />
-          </picture>
-        </li>
-        <li class="blog__slider-item">
-          <picture class="blog__flower">
-            <source
-              media="screen and (max-width:767px)"
-              srcset="
-                /src/images/blog/mobile/flowers1-mob.jpg    1x,
-                /src/images/blog/mobile/flowers1-mob@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:768px) and (max-width:1279px)"
-              srcset="
-                /src/images/blog/tablet/flowers1-tablet.jpg    1x,
-                /src/images/blog/tablet/flowers1-tablet@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:1280px)"
-              srcset="
-                /src/images/blog/desktop/flowers1-desk.jpg    1x,
-                /src/images/blog/desktop/flowers1-desk@2x.jpg 2x
-              "
-            />
-            <img
-              srcset="
-                /src/images/blog/desktop/flowers1-desk.jpg    1x,
-                /src/images/blog/desktop/flowers1-desk@2x.jpg 2x
-              "
-              src="/src/images/blog/desktop/flowers1-desk@2x.jpg"
-              alt="image"
-              loading="lazy"
-            />
-          </picture>
-        </li>
-        <li class="blog__slider-item">
-          <picture class="blog__flower">
-            <source
-              media="screen and (max-width:767px)"
-              srcset="
-                /src/images/blog/mobile/flowers3-mob.jpg    1x,
-                /src/images/blog/mobile/flowers3-mob@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:768px) and (max-width:1279px)"
-              srcset="
-                /src/images/blog/tablet/flowers3-tablet.jpg    1x,
-                /src/images/blog/tablet/flowers3-tablet@2x.jpg 2x
-              "
-            />
-            <source
-              media="screen and (min-width:1280px)"
-              srcset="
-                /src/images/blog/desktop/flowers3-desk.jpg    1x,
-                /src/images/blog/desktop/flowers3-desk@2x.jpg 2x
-              "
-            />
-            <img
-              srcset="
-                /src/images/blog/desktop/flowers3-desk.jpg    1x,
-                /src/images/blog/desktop/flowers3-desk@2x.jpg 2x
-              "
-              src="/src/images/blog/desktop/flowers3-desk@2x.jpg"
-              alt="image"
-              loading="lazy"
-            />
-          </picture>
-        </li>
-      </ul>
-      <button class="blog__slider-left">
-        <svg class="blog__icon">
-          <use href="/src/images/icons.svg#arrow-left"></use>
-        </svg>
-      </button>
-      <button class="blog__slider-right">
-        <svg class="blog__icon">
-          <use href="/src/images/icons.svg#arrow-right"></use>
-        </svg>
-      </button>
-    </div>
+  <div class="title-wrapper container">
+    <h2 class="animate__animated animate__slideInLeft title">blog</h2>
+    <span class="animate__animated animate__slideInRight line"></span>
+  </div>
 
-    <div class="blog__follow">
-      <p class="blog__paragraf">Follow to our newsletter</p>
-      <button class="blog__btn-subscribe">Subscribe</button>
-    </div>
+  <div class="blog__slider">
+    <ul class="blog__slider-list">
+      <li class="blog__slider-item">
+        <picture class="blog__flower">
+          <source
+            media="screen and (max-width:767px)"
+            srcset="
+              ./images/blog/mobile/flowers2-mob-resized.jpg    1x,
+              ./images/blog/mobile/flowers2-mob@2x-resized.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./images/blog/tablet/flowers2-tablet-resized.jpg    1x,
+              ./images/blog/tablet/flowers2-tablet@2x-resized.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:1280px)"
+            srcset="
+              ./images/blog/desktop/flowers2-desk.jpg    1x,
+              ./images/blog/desktop/flowers2-desk@2x.jpg 2x
+            "
+          />
+          <img
+            aria-label="slider flower picture"
+            srcset="
+              ./images/blog/desktop/flowers2-desk.jpg    1x,
+              ./images/blog/desktop/flowers2-desk@2x.jpg 2x
+            "
+            src="./images/blog/desktop/flowers2-desk@2x.jpg"
+            alt="image"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="blog__slider-item">
+        <picture class="blog__flower">
+          <source
+            media="screen and (max-width:767px)"
+            srcset="
+              ./images/blog/mobile/flowers1-mob.jpg    1x,
+              ./images/blog/mobile/flowers1-mob@2x.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./images/blog/tablet/flowers1-tablet.jpg    1x,
+              ./images/blog/tablet/flowers1-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:1280px)"
+            srcset="
+              ./images/blog/desktop/flowers1-desk.jpg    1x,
+              ./images/blog/desktop/flowers1-desk@2x.jpg 2x
+            "
+          />
+          <img
+            aria-label="slider flower picture"
+            srcset="
+              ./images/blog/desktop/flowers1-desk.jpg    1x,
+              ./images/blog/desktop/flowers1-desk@2x.jpg 2x
+            "
+            src="./images/blog/desktop/flowers1-desk.jpg"
+            alt="image"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="blog__slider-item">
+        <picture class="blog__flower">
+          <source
+            media="screen and (max-width:767px)"
+            srcset="
+              ./images/blog/mobile/flowers3-mob-resized.jpg    1x,
+              ./images/blog/mobile/flowers3-mob@2x-resized.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./images/blog/tablet/flowers3-tablet.jpg    1x,
+              ./images/blog/tablet/flowers3-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:1280px)"
+            srcset="
+              ./images/blog/desktop/flowers3-desk.jpg    1x,
+              ./images/blog/desktop/flowers3-desk@2x.jpg 2x
+            "
+          />
+          <img
+            aria-label="slider flower picture"
+            srcset="
+              ./images/blog/desktop/flowers3-desk.jpg    1x,
+              ./images/blog/desktop/flowers3-desk@2x.jpg 2x
+            "
+            src="./images/blog/desktop/flowers3-desk.jpg"
+            alt="image"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+      <li class="blog__slider-item">
+        <picture class="blog__flower">
+          <source
+            media="screen and (max-width:767px)"
+            srcset="
+              ./images/blog/mobile/flowers1-mob.jpg    1x,
+              ./images/blog/mobile/flowers1-mob@2x.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:768px) and (max-width:1279px)"
+            srcset="
+              ./images/blog/tablet/flowers1-tablet.jpg    1x,
+              ./images/blog/tablet/flowers1-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="screen and (min-width:1280px)"
+            srcset="
+              ./images/blog/desktop/flowers1-desk.jpg    1x,
+              ./images/blog/desktop/flowers1-desk@2x.jpg 2x
+            "
+          />
+          <img
+            aria-label="flower picture"
+            srcset="
+              ./images/blog/desktop/flowers1-desk.jpg    1x,
+              ./images/blog/desktop/flowers1-desk@2x.jpg 2x
+            "
+            src="./images/blog/desktop/flowers1-desk.jpg"
+            alt="image"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+
+  <div class="blog__follow container">
+    <p class="blog__paragraf">Follow to our newsletter</p>
+    <button class="blog__btn-subscribe">Subscribe</button>
   </div>
 </section>

@@ -29,11 +29,11 @@
 
         for (let i = 0; i < refs.inputElems.length; i++) {
             let elem = refs.inputElems[i];
-            console.log(elem.value)
+            elem.classList.remove('error', 'animate__animated', 'animate__tada');
+
             let pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(elem.value)
-            if (elem.value.length === 0 || !pattern){
-                elem.classList.add('error', 'animate__animated', 'animate__tada');
-                elem.focus();
+            if (!pattern){
+                elem.classList.add('error', 'animate__animated', 'animate__tada');                
                 break;
             }
             

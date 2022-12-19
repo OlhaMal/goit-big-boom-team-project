@@ -39,12 +39,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: $basic-white;
     
+    &.no-scroll{
+        overflow:hidden;
+    }
 }
 
 .container {
     margin: 0 auto;
-	padding: 0 16px;
-    overflow: hidden;
+	padding: 0 16px;    
     
 
     @media screen and (min-width: $mobile) {
@@ -100,3 +102,4 @@ section {
 .line {
     @extend %line;
 }
+
