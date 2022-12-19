@@ -1,0 +1,70 @@
+.delivery {
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+  &__list {
+    margin-bottom: 26px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    counter-increment: step-counter;
+    padding-left: 48px;
+    min-height: 40px;
+    @include font(500, 14px, calc(17 / 14));
+    color: $primary-color;
+    @media screen and (min-width: $tablet) {
+      padding-left: 84px;
+      min-height: 64px;
+      @include font(500, 24px, calc(29 / 24));
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: 120px;
+      @include font(500, 32px, calc(39 / 32));
+    }
+    &:not(:last-child) {
+      margin-bottom: 14px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 32px;
+      }
+    }
+    &::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      @include font(500, 20px, calc(24 / 20));
+      @media screen and (min-width: $tablet) {
+        width: 64px;
+        height: 64px;
+        @include font(500, 26px, calc(32 / 26));
+      }
+    }
+  }
+  &__img-inner {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $primary-color;
+  }
+  &__img {
+    width: 100%;
+  }
+}
