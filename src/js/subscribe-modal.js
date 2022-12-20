@@ -2,19 +2,19 @@
     const refs = {
         openModalBtn: document.querySelector('.blog__btn-subscribe'),
         closeModalBtn: document.querySelector('.modal__btn-close'),
-        modal: document.querySelector('.backdrop'),
+        modal: document.querySelector('.backdrop__subscribe'),
         body: document.querySelector('body'),
         form: document.querySelector('.modal__subscribe'),
         subscribeBtn: document.querySelector('.modal__btn-subscribe'),
         inputElems : document.getElementsByClassName('modal__input'),
     }
 
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtn.addEventListener("click", subscribeModal);
+    refs.closeModalBtn.addEventListener("click", subscribeModal);
     
 
 
-    function toggleModal() {        
+    function subscribeModal() {        
         refs.modal.classList.toggle("is-hidden");
         refs.body.classList.toggle("no-scroll");        
         [...refs.inputElems].forEach(elem => {
