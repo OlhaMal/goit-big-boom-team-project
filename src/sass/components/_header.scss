@@ -32,6 +32,12 @@
       padding-bottom: 16px;
       color: $primary-color;
       @include font(400, 20px, calc(24 / 20));
+      @include transition (color);
+
+      &:hover,
+      &:focus {
+        color: $brand-color;
+      }
     }
   }
 }
@@ -101,5 +107,12 @@
   &__link {
     color: $basic-white;
     @include font(400, 20px, calc(24 / 20));
+    
+          @include transition (color);
+
+      &:hover,
+      &:focus {
+        color: $brand-color;
+    }
   }
 }
