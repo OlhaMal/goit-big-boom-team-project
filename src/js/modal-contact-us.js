@@ -55,20 +55,6 @@
 
   refs.sentBtn.addEventListener("click", validation);
 
-  })();
+  })();  
   
-  // (() => {
-  //   const refs = {
-  //     openModalBtn: document.querySelector("[data-modal-opena]"),
-  //     closeModalBtn: document.querySelector("[data-modal-closea]"),
-  //     modal: document.querySelector("[data-modala]"),
-  //   };
-  
-  //   refs.openModalBtn.addEventListener("click", toggleModal);
-  //   refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-  //   function toggleModal() {
-  //     refs.modal.classList.toggle("is-hidden");
-  //   }
-  // })();
   
