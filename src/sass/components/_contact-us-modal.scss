@@ -1,0 +1,140 @@
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: $faded-color;
+    position: fixed;
+    top: 0;
+    @include transition(opacity visibility)
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-contact-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 272px;
+    padding: 28px 16px;
+    background-color:$basic-white;
+   
+    @media screen and (min-width : 768px){
+         width: 480px;
+        padding: 48px 32px;
+    
+    
+}
+}
+
+.backdrop.is-hidden .modal-contact-us {
+    transform: translate(-50%, -50%) scale(0.3);
+    transition: transform 2000ms linear;
+}
+
+.modal-contact-us__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+
+    @media screen and(min-width : 768px) {
+        top: 28px;
+        right: 28px;
+    
+}
+}
+
+.modal-contact-us__title,
+.modal-thank-you__title{
+    @include font (600, 20px, 1.2);
+    margin-bottom: 14px;
+
+
+    @media screen and (min-width : 768px) {
+        font-size: 32px;  
+        margin-bottom: 24px;
+    
+}
+}
+.modal-contact-us__text,
+.modal-thank-you__text{
+    @include font (500, 12px, 1.25);
+    color: $faint-gray-color;
+    margin-bottom: 18px;
+
+    @media screen and (min-width : 768px){
+        font-size: 16px;
+        margin-bottom: 32px;
+
+    }
+}
+.modal-contact-us__lable{
+    display: block;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
+
+    @media screen and (min-width : 768px){
+    
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+}
+.modal-contact-us__input{
+    display: block;
+    width: 240px;
+    padding: 10px 12px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.25;
+
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    color: $faded-color;
+
+    @media screen and (min-width : 768px){
+        
+         width: 416px;
+         font-size: 14px;
+         line-height: 1.2;
+         padding: 16px;
+     }
+     
+}
+
+.modal-contact-us__btn,
+.modal-thank-you__btn{
+    width: 100%;
+    height: 37px;
+    @include font (600, 14px, 1.2);
+
+    text-align: center;
+
+    color: $basic-white;
+    background: rgba(232, 111, 84, 0.4);
+    border-radius: 8px;
+    border: 0;
+    margin-top: 14px;
+    @include transition(background-color)
+    &:hover{
+        background-color: $brand-color-hover;
+    }
+     &:focus{
+        background-color: $brand-color-focus;
+    }
+
+
+    @media screen and (min-width : 768px){
+    
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.22;
+
+    }
+}
