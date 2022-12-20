@@ -3,7 +3,7 @@
   const mobileLinks = document.querySelector(".mobile-menu__list");
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  const innerMenu = document.querySelector('.mobile-menu__inner');
+  const innerMenu = document.querySelector('.mobile-menu__list');
   const body = document.querySelector('body');
   let isOpen = false;
 
