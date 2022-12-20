@@ -4,7 +4,7 @@
     background-color: $faded-color;
     position: fixed;
     top: 0;
-    @include transition(opacity visibility)
+    @include transition(opacity visibility);
 }
 
 .is-hidden {
@@ -121,7 +121,7 @@
     border-radius: 8px;
     border: 0;
     margin-top: 14px;
-    @include transition(background-color)
+    @include transition(background-color);
     &:hover{
         background-color: $brand-color-hover;
     }
@@ -137,4 +137,69 @@
         line-height: 1.22;
 
     }
+}
+
+
+
+
+
+
+.modal-thank-you {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 272px;
+    position: absolute;
+    padding: 32px 16px;
+    text-align: center;
+    background-color: $basic-white;
+    margin: 0 auto;
+ 
+    @media screen and (min-width : 768px){
+    
+        width: 480px;
+        padding: 54px 32px;
+
+    }
+}
+.modal-thank-you__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+}
+
+// .modal-thank-you__svg-close {
+    
+// }
+.modal-thank-you__svg {
+    width: 188px;
+    height: 142px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width : 768px){
+    
+        width: 266px;
+        height: 202px;
+    }
+}
+.modal-thank-you__title{
+    margin-bottom: 14px;
+
+    @media screen and (min-width : 768px){
+        margin-bottom: 16px;
+    }
+}
+.modal-thank-you__text {
+    margin-bottom: 18px;
+
+    @media screen and (min-width : 768px){
+        margin-bottom: 34px;
+    }
+}
+.modal-thank-you__btn {
+    margin: 0;
+}
+.error{
+    border: 1px solid red;
 }
