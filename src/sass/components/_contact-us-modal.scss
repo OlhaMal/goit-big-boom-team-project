@@ -93,8 +93,10 @@
     font-size: 12px;
     line-height: 1.25;
 
+
     border: 1px solid $border-color;
     border-radius: 4px;
+    outline:none;
 
     color: $faded-color;
 
@@ -138,10 +140,6 @@
 
     }
 }
-
-
-
-
 
 
 .modal-thank-you {
@@ -201,5 +199,5 @@
     margin: 0;
 }
 .error{
-    border: 1px solid red;
+    border: 2px solid red;
 }
