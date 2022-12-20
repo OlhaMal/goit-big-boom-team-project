@@ -77,12 +77,15 @@
     padding: 10px 35px;
     margin: 0 auto;
     background-color:$brand-color;
-        &:hover{
-            background-color: $brand-color-hover;
-        }
-        &:focus{
+    @include transition(color box-shadow);
+    &:hover{
+        background-color: $brand-color-hover;
+        box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    }
+    &:focus{
         background-color: $brand-color-focus;
-        }
+        box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+    }
 
     @media screen and (min-width : $tablet){
         font-size: 28px;
