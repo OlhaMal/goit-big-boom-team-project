@@ -6,7 +6,7 @@
         body: document.querySelector('body'),
         form: document.querySelector('.modal__subscribe'),
         subscribeBtn: document.querySelector('.modal__btn-subscribe'),
-        inputElems : document.getElementsByClassName('modal__input')
+        inputElems : document.getElementsByClassName('modal__input'),
     }
 
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -32,13 +32,14 @@
             elem.classList.remove('error', 'animate__animated', 'animate__tada');
 
             let emailPattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(elem.value);
-            let textPattern = /[a-zA-Z0-9_\-\.]/.test(elem.value);
+            let textPattern = /[a-zA-Z0-9]/.test(elem.value);
 
-            if (!emailPattern && elem.name == "name"){
+            if (!textPattern && elem.name == "name"){
                 elem.classList.add('error', 'animate__animated', 'animate__tada');                
                 break;
             }
-            else if(!textPattern && elem.name == "email"){
+
+            if(!emailPattern && elem.name == "email"){
                 elem.classList.add('error', 'animate__animated', 'animate__tada');                
                 break;
             }
